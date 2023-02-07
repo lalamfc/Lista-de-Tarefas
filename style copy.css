@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2? família= Open+Sans:wght@300;700 &family= Roboto:wght@100;300;500;700 & display=swap');
+
+/*criar uma variavel global*/
+:root{
+    --primary-color:  rgb(238, 171, 116);
+    --primary-color-darker: rgb(165, 113, 53);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    /*altura da fonte*/
+    line-height: 1.5;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    max-width: 640px;
+    /*para centralizar auto (as laterais) e esse 50px foi para o topo*/
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.timer{
+    font-size: 3em;
+    text-align: center;
+}
+
+button{
+    border: none;
+    background-color: var(--primary-color);
+    color: rgb(19, 20, 19);
+    font-size: 15px;
+    font-weight: 500;
+    height: 30px;
+    /*para ficar uma mao quando passar em cima do botão*/
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+button:hover{
+    /*mudar de cor quando passar o mouse em cima */
+    background: var(--primary-color-darker);
+}
+
+button:active{
+    /*mudar de cor quando clicar com o mouse em cima */
+    background: gray;
+}
+
+.paragrafo-resultado{
+    background: rgb(31, 209, 60);
+    padding: 10px 20px;
+}
+
+.bad{
+    background: rgb(221, 62, 41);
+    padding: 10px 20px;
+}
